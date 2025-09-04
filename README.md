@@ -104,4 +104,3 @@ Let's say you are going to implement the Twitter dApp as the Solana Program. Her
 
 > [!TIP]
 > If you have any questions, feel free to reach out to us on [Discord](https://discord.gg/z3JVuZyFnp).
-# twisol-Dapp
