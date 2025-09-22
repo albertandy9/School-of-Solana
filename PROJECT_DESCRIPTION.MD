@@ -204,3 +204,5 @@ npm run preview
 **Security Considerations:**
 
 - Accounts must remain rent-exempt with proper closure handling, and all local state is cleared upon wallet disconnection.
+
+**Instashot:**

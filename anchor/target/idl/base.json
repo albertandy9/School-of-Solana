@@ -22,10 +22,28 @@
       "accounts": [
         {
           "name": "post",
-          "writable": true
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  115,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "author"
+              }
+            ]
+          }
         },
         {
           "name": "author",
+          "writable": true,
           "signer": true,
           "relations": [
             "post"
@@ -50,7 +68,23 @@
         {
           "name": "post",
           "writable": true,
-          "signer": true
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  115,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "author"
+              }
+            ]
+          }
         },
         {
           "name": "author",
@@ -88,7 +122,24 @@
       "accounts": [
         {
           "name": "post",
-          "writable": true
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  115,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "author"
+              }
+            ]
+          }
         },
         {
           "name": "author",

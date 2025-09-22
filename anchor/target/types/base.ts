@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/base.json`.
  */
 export type Base = {
-  "address": "JAVuBXeBZqXNtS73azhBDAoYaaAFfo4gWXoZe2e7Jf8H",
+  "address": "9uN37h9wSc4yUyMxkfnbtSxuTrAUEEfbqwkhuvnRtADL",
   "metadata": {
     "name": "base",
     "version": "0.1.0",
@@ -28,10 +28,28 @@ export type Base = {
       "accounts": [
         {
           "name": "post",
-          "writable": true
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  115,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "author"
+              }
+            ]
+          }
         },
         {
           "name": "author",
+          "writable": true,
           "signer": true,
           "relations": [
             "post"
@@ -56,7 +74,23 @@ export type Base = {
         {
           "name": "post",
           "writable": true,
-          "signer": true
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  115,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "author"
+              }
+            ]
+          }
         },
         {
           "name": "author",
@@ -94,7 +128,24 @@ export type Base = {
       "accounts": [
         {
           "name": "post",
-          "writable": true
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  111,
+                  115,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "author"
+              }
+            ]
+          }
         },
         {
           "name": "author",
